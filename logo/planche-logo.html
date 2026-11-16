@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Logo Maison Lune</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    @font-face { font-family: 'DM Serif Display'; font-weight: 400; src: url('../fonts/dm-serif-display-latin.woff2') format('woff2'); }
+    @font-face { font-family: 'DM Serif Display'; font-style: italic; font-weight: 400; src: url('../fonts/dm-serif-display-italic-latin.woff2') format('woff2'); }
+    @font-face { font-family: 'Manrope'; font-weight: 400 700; src: url('../fonts/manrope-variable-latin.woff2') format('woff2'); }
+    :root { --ink:#0E1424; --paper:#F6F1E8; --sand:#ECE3D4; --gold:#D6A75E; --gold-ink:#8A5A14; --muted:#565E6E; }
+    * { box-sizing: border-box; margin: 0; }
+    body { background: var(--paper); color: var(--ink); font-family: 'Manrope', system-ui, sans-serif; font-size: 16px; padding: clamp(24px, 5vw, 64px) 16px; }
+    main { max-width: 1080px; margin: 0 auto; }
+    h1 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: clamp(40px, 6vw, 64px); line-height: 1.05; }
+    h1 em { color: var(--gold-ink); }
+    .lead { max-width: 640px; margin: 16px 0 40px; color: var(--muted); line-height: 1.7; }
+    h2 { font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-ink); margin: 56px 0 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+    figure { display: grid; place-items: center; gap: 18px; min-height: 260px; padding: 36px 28px; border: 1px solid rgba(14,20,36,.1); }
+    figure.dark { background: var(--ink); border-color: var(--ink); }
+    figure.sand { background: var(--sand); }
+    figure img { max-width: 100%; }
+    figcaption { font-size: 13px; color: var(--muted); text-align: center; }
+    .dark figcaption { color: #AEB5C3; }
+    .idea { display: grid; grid-template-columns: 160px 1fr; gap: 28px; align-items: center; max-width: 760px; }
+    .idea p { color: var(--muted); line-height: 1.75; }
+    .sizes { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 28px; }
+    .swatches { display: flex; flex-wrap: wrap; gap: 16px; }
+    .swatch { width: 160px; font-size: 14px; }
+    .swatch span { display: block; height: 84px; margin-bottom: 8px; border: 1px solid rgba(14,20,36,.12); }
+    .swatch small { display: block; color: var(--muted); }
+    ul { padding-left: 18px; color: var(--muted); line-height: 1.9; }
+    code { color: var(--ink); font-size: 14px; }
+    @media (max-width: 560px) { .idea { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Le logo <em>Maison Lune</em></h1>
+  <p class="lead">Une arche, comme une alcôve, une porte de maison ou une tête de lit. La lune s’y pose, dorée. En dessous, le nom en capitales espacées, dessiné dans la même famille que les titres du site, et la signature « L’art de mieux dormir ».</p>
+
+  <div class="idea">
+    <img src="maison-lune-embleme.svg" alt="Emblème Maison Lune : une arche à double trait avec un croissant de lune doré">
+    <p><strong>Le double trait</strong> de l’arche rappelle les menuiseries et les moulures d’un intérieur soigné. <strong>La ligne d’horizon</strong> qui la déborde évoque le lit, posé au sol. <strong>Le croissant</strong> est le seul élément doré : c’est la signature, à ne jamais changer de couleur.</p>
+  </div>
+
+  <h2>Logo principal (vertical)</h2>
+  <div class="grid">
+    <figure><img src="maison-lune-logo.svg" alt="Logo Maison Lune, version foncée" style="height:220px"><figcaption>maison-lune-logo.svg, fonds clairs</figcaption></figure>
+    <figure class="dark"><img src="maison-lune-logo-clair.svg" alt="Logo Maison Lune, version claire" style="height:220px"><figcaption>maison-lune-logo-clair.svg, fonds sombres</figcaption></figure>
+  </div>
+
+  <h2>Logo horizontal (site, e-mails, factures)</h2>
+  <div class="grid">
+    <figure><img src="maison-lune-logo-horizontal.svg" alt="" style="height:52px"><figcaption>maison-lune-logo-horizontal.svg</figcaption></figure>
+    <figure class="dark"><img src="maison-lune-logo-horizontal-clair.svg" alt="" style="height:52px"><figcaption>maison-lune-logo-horizontal-clair.svg</figcaption></figure>
+  </div>
+
+  <h2>Icône (favicon, réseaux sociaux, étiquettes)</h2>
+  <div class="grid">
+    <figure class="sand"><img src="maison-lune-icone.svg" alt="" style="height:150px"><figcaption>maison-lune-icone.svg · png/maison-lune-icone-1024.png</figcaption></figure>
+    <figure><div class="sizes"><img src="favicon.svg" width="64" height="64" alt=""><img src="favicon.svg" width="32" height="32" alt=""><img src="favicon.svg" width="16" height="16" alt=""><img src="maison-lune-logo-horizontal.svg" height="28" alt=""></div><figcaption>Petites tailles</figcaption></figure>
+  </div>
+
+  <h2>Couleurs</h2>
+  <div class="swatches">
+    <div class="swatch"><span style="background:#0E1424"></span><strong>Bleu nuit</strong><small>#0E1424</small></div>
+    <div class="swatch"><span style="background:#F6F1E8"></span><strong>Crème</strong><small>#F6F1E8</small></div>
+    <div class="swatch"><span style="background:#D6A75E"></span><strong>Or lune</strong><small>#D6A75E · fonds sombres</small></div>
+    <div class="swatch"><span style="background:#B98A45"></span><strong>Or foncé</strong><small>#B98A45 · fonds clairs</small></div>
+  </div>
+
+  <h2>Typographie</h2>
+  <ul>
+    <li><strong>DM Serif Display</strong> : titres éditoriaux.</li>
+    <li><strong>Manrope</strong> : textes, boutons et informations pratiques.</li>
+  </ul>
+
+  <h2>Règles d’usage</h2>
+  <ul>
+    <li>Laisser autour du logo un espace libre au moins égal à la largeur de l’arche.</li>
+    <li>Version horizontale sous 140 px de large : utiliser l’icône seule.</li>
+    <li>Ne pas déformer, incliner, ombrer ni recolorer le logo ; le croissant reste toujours or.</li>
+    <li>Fichiers vectoriels (<code>.svg</code>) pour le site, l’impression et Canva ; <code>png/</code> pour les réseaux sociaux.</li>
+  </ul>
+</main>
+</body>
+</html>

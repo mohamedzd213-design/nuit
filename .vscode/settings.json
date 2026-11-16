@@ -1,0 +1,7 @@
+{
+  "explorer.sortOrder": "type",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "index.html": "404.html, CGV.html, a-propos.html, collection.html, contact.html, faq.html, guide.html, legal.html, lit-*.html, livraison.html, panier.html, produit.html"
+  }
+}

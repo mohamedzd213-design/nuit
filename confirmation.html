@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation de commande | Maison Lune</title>
+  <meta name="description" content="Vérification du paiement de votre commande Maison Lune.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0E1424">
+  <link rel="icon" href="logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="logo/apple-touch-icon.png">
+  <link rel="preload" href="fonts/manrope-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="templates.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="confirmation.js" defer></script>
+</head>
+<body data-page="confirmation">
+  <div data-include="header"></div>
+  <main id="contenu">
+    <section class="page-hero section-sand">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Accueil</a></li>
+          <li aria-current="page">Confirmation</li>
+        </ol>
+        <span class="eyebrow">Votre commande</span>
+        <h1 data-confirmation-title>Vérification du paiement</h1>
+        <p class="lead" data-confirmation-message>Nous vérifions le statut de votre paiement auprès de Stripe.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="confirmation-card" data-confirmation-card hidden>
+          <p class="eyebrow">Commande confirmée</p>
+          <h2>Merci pour votre confiance.</h2>
+          <p>Votre paiement est accepté. Votre numéro de commande est :</p>
+          <p class="order-number" data-order-number></p>
+          <p>Un e-mail de confirmation et un lien sécurisé vers votre compte vont être envoyés à <strong data-order-email></strong>.</p>
+          <div data-order-items></div>
+          <p class="order-total">Total payé <strong data-order-total></strong></p>
+          <a class="btn btn-primary" href="compte.html">Accéder à mon compte</a>
+        </div>
+        <p class="field-error" role="alert" data-confirmation-error></p>
+      </div>
+    </section>
+  </main>
+  <div data-include="footer"></div>
+</body>
+</html>

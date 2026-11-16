@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- MODÈLE des fiches produit : ne pas ouvrir directement.
+     Les pages lit-*.html sont créées à partir de ce fichier par outils/generer.mjs -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="theme-color" content="#0E1424">
+  <!-- @seo --><!-- /@seo -->
+  <link rel="icon" href="logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="logo/apple-touch-icon.png">
+  <link rel="preload" href="fonts/manrope-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="data.js" defer></script>
+  <script src="templates.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body data-page="product">
+
+  <div data-include="header"><!-- @header --><!-- /@header --></div>
+
+  <main id="contenu">
+
+    <div class="product-page">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="collection.html">Nos lits</a></li>
+          <li aria-current="page">{{name}}</li>
+        </ol>
+
+        <div data-product="{{id}}"><!-- @product --><!-- /@product --></div>
+      </div>
+    </div>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="info-cards">
+          <article class="info-card">
+            <span data-icon="truck"></span>
+            <h3>Livré & installé</h3>
+            <p>Sur rendez-vous, dans la pièce de votre choix. Nous repartons avec tous les emballages.</p>
+          </article>
+          <article class="info-card">
+            <span data-icon="moon"></span>
+            <h3>100 nuits pour l’adopter</h3>
+            <p>S’il ne vous convient pas, nous venons le reprendre gratuitement et vous remboursons.</p>
+          </article>
+          <article class="info-card">
+            <span data-icon="shield"></span>
+            <h3>Garanti 10 ans</h3>
+            <p>Structure et sommier garantis 10 ans, tissus et mécanismes 2 ans.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Vous aimerez aussi</span>
+            <h2>Le reste de la <em>collection.</em></h2>
+          </div>
+          <a class="link" href="collection.html">Comparer tous les lits <span data-icon="arrow"></span></a>
+        </div>
+        <div class="product-grid cols-3" data-related><!-- @related --><!-- /@related --></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-include="footer"><!-- @footer --><!-- /@footer --></div>
+
+</body>
+</html>

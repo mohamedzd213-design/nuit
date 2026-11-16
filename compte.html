@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon compte | Maison Lune</title>
+  <meta name="description" content="Accédez à vos commandes Maison Lune grâce à un lien sécurisé envoyé par e-mail.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0E1424">
+  <link rel="icon" href="logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="logo/apple-touch-icon.png">
+  <link rel="preload" href="fonts/manrope-variable-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="templates.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="account.js" defer></script>
+</head>
+<body data-page="account">
+  <div data-include="header"></div>
+  <main id="contenu">
+    <section class="page-hero section-sand">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Accueil</a></li>
+          <li aria-current="page">Mon compte</li>
+        </ol>
+        <span class="eyebrow">Espace client</span>
+        <h1>Vos commandes,<br><em>au même endroit.</em></h1>
+        <p class="lead">Connectez-vous avec un lien sécurisé envoyé à l’adresse utilisée lors de votre commande. Aucun mot de passe à retenir.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container container-narrow">
+        <div class="account-panel" data-account-login-panel>
+          <form data-account-login novalidate>
+            <div class="field">
+              <label for="account-email">Adresse e-mail de votre commande</label>
+              <input class="input" id="account-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <p class="field-error" role="alert" data-account-error></p>
+            <p class="form-success" role="status" hidden data-account-message></p>
+            <button class="btn btn-primary" type="submit" data-account-submit>Recevoir mon lien de connexion</button>
+          </form>
+          <div class="account-verify" hidden data-account-verify>
+            <h2>Confirmer la connexion</h2>
+            <p>Pour protéger votre compte, confirmez la connexion depuis cet appareil.</p>
+            <p class="field-error" role="alert" data-verify-error></p>
+            <button class="btn btn-primary" type="button" data-verify-submit>Accéder à mon compte</button>
+          </div>
+        </div>
+
+        <section class="account-orders" hidden data-account-orders aria-labelledby="account-orders-title">
+          <div class="account-orders-head">
+            <div>
+              <span class="eyebrow">Espace client</span>
+              <h2 id="account-orders-title">Mes commandes</h2>
+              <p class="helper" data-account-identity></p>
+            </div>
+            <button class="btn btn-outline" type="button" data-account-logout>Se déconnecter</button>
+          </div>
+          <div data-orders-list></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <div data-include="footer"></div>
+</body>
+</html>

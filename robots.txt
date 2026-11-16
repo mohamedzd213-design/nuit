@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /outils/
+
+Sitemap: https://www.maisonlune.fr/sitemap.xml
