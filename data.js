@@ -13,7 +13,7 @@ const SHOP = {
   email: 'bonjour@maisonlune.fr',
   phone: '01 23 45 67 89',
   phoneHref: '+33123456789',
-  address: '[12 rue de l’Exemple, 75011 Paris]',
+  address: '18 rue des Rêveurs, 75011 Paris',
   hours: 'Du mardi au samedi, 10h – 19h',
   instagram: '#',
   pinterest: '#',
